@@ -43,10 +43,10 @@
     </div>
     <h3>Parameters</h3>
     <p>
-      The <span>File::makeDirectoryspan</span> function takes the following as input
+      The <span>File::make Directory span</span> function takes the following as input
       parameters:
     </p>
-    <ul>
+    <ul> 
       <li>
         <span>$path</span>: This string represents the path of the directory we wish to
         create.
@@ -73,10 +73,10 @@
     <h3>Code</h3>
     <div class="blok3">
       <pre>
-public function createDirecrotory(Request $request)
+public function create Direcrotory (Request $request)
 }		$path = public_path('upload/');
 
-    if(!File::isdirectory($path)){
+    if(!File::is directory($path)){
         File::makeDirectory($path, 0777, true, true);
 
 // retry storing the file in newly created path.
