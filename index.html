@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+<div class="content">
+
+  <div class="content1">
+    <h2>Laravel 8</h2>
+    <div class="blok1">
+      <p class="text1">Get Started With Machine Learning</p>
+      <p>
+        Learn the fundamentals of Machine Learning with this free course.
+        Future-proof your career by adding ML skills to your toolkit — or
+        build foundational ML skills to land a job in AI or Data Science.
+      </p>
+      <button>
+        Get Free Cource
+      </button>
+    </div>
+    <p>
+      While creating an application or working with files in your application,
+      you will want to store a file in a folder. Sometimes there will be
+      instances where the folder does not exist.
+    </p>
+    <p>
+      You want to create that folder during the process so the file can be
+      stored without making the user resend the request.
+    </p>
+    <p>
+      You can create folder or directory by using the<span> File::makeDirectory()</span>
+      function.
+    </p>
+    <h3>Syntax</h3>
+    <div class="blok2">
+      <p>File::makeDirectory($path, $mode, $recursive, $force)</p>
+    </div>
+    <h3>Parameters</h3>
+    <p>
+      The <span>File::makeDirectoryspan</span> function takes the following as input
+      parameters:
+    </p>
+    <ul>
+      <li>
+        <span>$path</span>: This string represents the path of the directory we wish to
+        create.
+      </li>
+      <li>
+        <span>$mode</span>: This is a four-digit integer that is used to set permissions
+        for the directory.
+      </li>
+      <li>
+        <span>$mode</span>: This is a boolean variable used to specify if the recursive
+        mode is set.
+      </li>
+      <li>
+        <span>$force</span>: This is a boolean variable that, when set, lets you create a
+        file in the profile path even when the directories in the path do not
+        exist.
+      </li>
+    </ul>
+    <h3>Return value</h3>
+    <p>
+      The function returns<span> true </span>if the requested directory is created.
+      Otherwise, it returns <span>false</span>.
+    </p>
+    <h3>Code</h3>
+    <div class="blok3">
+      <pre>
+public function createDirecrotory(Request $request)
+}		$path = public_path('upload/');
+
+    if(!File::isdirectory($path)){
+        File::makeDirectory($path, 0777, true, true);
+
+// retry storing the file in newly created path.
+    }        
+}
+</pre
+      >
+    </div>
+    <p>
+      The above code has <span>$path</span>, which is basically an <span>upload</span> folder where you
+      want to store the file.
+    </p>
+    <p>
+      We check if it exists, and if it doesn’t, we create the <span>upload</span> folder.
+    </p>
+    <div class="blok4">
+      <p class="textp">
+        Note: The <span>File::isDirectory()</span> function is used to check whether or not
+        the given path exists.
+      </p>
+    </div>
+    <hr />
+    <p>RELATED TABS</p>
+    <div class="button1">
+      <button>folder</button>
+      <button>php</button>
+      <button>laravel</button>
+    </div>
+    <p>CONTRIBUTOR</p>
+    <div class="blok5">
+      <img src="img1/unnamed.png" alt="" />
+    </div>
+    <div class="textp1">
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+    <hr class="hr1" />
+    <p class="text5"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="blok6">
+      <img src="img1/free-icon-font-share-3917447.png" alt="" ;>
+     <img src="img1/free-icon-font-bookmark-3916593.png" alt="">
+     <img src="img1/free-icon-font-megaphone-3914404.png" alt="">
+     <img src="img1/free-icon-font-share-3917574.png" alt="">
+    </div>
+    <button class="blok8">
+
+      <div class="blok7">
+       <p>Did you find this helpful? </p>  
+      <img src="img1/free-icon-font-social-network-3916586.png" alt="">
+      <img src="img1/free-icon-font-hand-3916589.png" alt="">
+      <img src="img1/free-icon-font-cross-small-3917195.png" alt="">
+    </button>
+
+    </div>
+  </div>
+</div>
+  </body>
+</html>
